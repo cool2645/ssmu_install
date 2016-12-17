@@ -1,0 +1,26 @@
+*filter
+-A OUTPUT -p tcp --dport 21 -j LOG --log-prefix "IPTABLES TCP-OUT 21:"
+-A OUTPUT -p tcp --dport 21 -j DROP
+-A OUTPUT -p tcp --dport 22 -j LOG --log-prefix "IPTABLES TCP-OUT 22:"
+-A OUTPUT -p tcp --dport 22 -j DROP
+-A OUTPUT -p tcp --dport 23 -j LOG --log-prefix "IPTABLES TCP-OUT 23:"
+-A OUTPUT -p tcp --dport 23 -j DROP
+-A OUTPUT -p tcp --dport 25 -j LOG --log-prefix "IPTABLES TCP-OUT 25:"
+-A OUTPUT -p tcp --dport 25 -j DROP
+-A OUTPUT -p tcp --dport 109 -j LOG --log-prefix "IPTABLES TCP-OUT 109:"
+-A OUTPUT -p tcp --dport 109 -j DROP
+-A OUTPUT -p tcp --dport 110 -j LOG --log-prefix "IPTABLES TCP-OUT 110:"
+-A OUTPUT -p tcp --dport 110 -j DROP
+-A OUTPUT -p tcp --dport 143 -j LOG --log-prefix "IPTABLES TCP-OUT 143:"
+-A OUTPUT -p tcp --dport 143 -j DROP
+-A OUTPUT -p tcp --dport 465 -j LOG --log-prefix "IPTABLES TCP-OUT 465:"
+-A OUTPUT -p tcp --dport 465 -j DROP
+-A OUTPUT -p tcp --dport 587 -j LOG --log-prefix "IPTABLES TCP-OUT 587:"
+-A OUTPUT -p tcp --dport 587 -j DROP
+-A OUTPUT -p tcp --dport 993 -j LOG --log-prefix "IPTABLES TCP-OUT 993:"
+-A OUTPUT -p tcp --dport 993 -j DROP
+-A OUTPUT -p tcp --dport 995 -j LOG --log-prefix "IPTABLES TCP-OUT 995:"
+-A OUTPUT -p tcp --dport 995 -j DROP
+-A OUTPUT -p tcp --dport 995 -j LOG --log-prefix "IPTABLES TCP-OUT 995:"
+-A OUTPUT -p tcp --dport 995 -j DROP
+COMMIT
