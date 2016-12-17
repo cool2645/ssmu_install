@@ -2,10 +2,10 @@
 ## How to use
 First make sure that your server os is Debian.
 Just clone it and
-> chmod +x ssmu_install_debian8.sh
+`chmod +x ssmu_install_debian8.sh`
 
 and then edit ssmu.cfg according to your sspanel and server config. Then run
-> ./ssmu_install_debian8.sh
+`./ssmu_install_debian8.sh`
 
 You may need some interact while installation.
 
