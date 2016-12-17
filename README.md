@@ -1,5 +1,6 @@
 # Shadowsocks mu auto installer
 ## How to use
+First make sure that your server os is Debian.
 Just clone it and
 > chmod +x ssmu_install_debian8.sh
 
