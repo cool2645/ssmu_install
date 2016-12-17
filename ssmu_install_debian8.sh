@@ -64,7 +64,7 @@ echo "stderr_logfile = /var/log/supervisor/ssserver_err.log" >> ssserver.conf
 cd ~
 if [ $is_serverspeeder != 0 ];
 then
-	wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/code/master/vm_check.sh && bash vm_check.sh
+	wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
 fi
 
 # Overwrite iptables if necessary
