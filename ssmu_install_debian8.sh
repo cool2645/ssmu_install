@@ -11,7 +11,7 @@ apt-get install make gcc g++ rsyslog supervisor redis-server git curl -y
 
 # Source config file and copy iptables config file
 source ./ssmu.cfg
-if [ $is_serverspeeder != 0 ];
+if [ $is_iptables != 0 ];
 then
 	cp iptables.banmailports.rules /etc/iptables.banmailports.rules
 fi
