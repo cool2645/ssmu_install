@@ -68,7 +68,7 @@ then
 fi
 
 # Overwrite iptables if necessary
-if [ $is_serverspeeder != 0 ];
+if [ $is_iptables != 0 ];
 then
 	iptables-restore < /etc/iptables.banmailports.rules
 	iptables-save > /etc/iptables.up.rules
