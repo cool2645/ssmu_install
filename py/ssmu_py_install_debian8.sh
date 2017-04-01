@@ -37,20 +37,20 @@ echo "API_PASS = '$api_key'" >> config.py
 echo "NODE_ID = '$api_node_id'" >> config.py
 echo "CHECKTIME = 30" >> config.py
 echo "SYNCTIME = 120" >> config.py
-echo "CUSTOM_METHOD = True" >> config.py
+echo "CUSTOM_METHOD = $custom_method" >> config.py
 echo "MANAGE_PASS = 'passwd'" >> config.py
 echo "MANAGE_BIND_IP = '127.0.0.1'" >> config.py
 echo "MANAGE_PORT = 65000" >> config.py
 echo "SS_BIND_IP = '::'" >> config.py
-echo "SS_METHOD = 'aes-256-cfb'" >> config.py
+echo "SS_METHOD = '$ss_method'" >> config.py
 echo "SS_OTA = False" >> config.py
-echo "SS_SKIP_PORTS = [80]" >> config.py
+echo "SS_SKIP_PORTS = $ss_skip_ports" >> config.py
 echo "SS_FASTOPEN = False" >> config.py
 echo "SS_TIMEOUT = 185" >> config.py
-echo "SS_FIREWALL_ENABLED = False" >> config.py
-echo "SS_FIREWALL_MODE = 'blacklist'" >> config.py
-echo "SS_BAN_PORTS = [22, 23, 25]" >> config.py
-echo "SS_ALLOW_PORTS = [53, 80, 443, 8080, 8081]" >> config.py
+echo "SS_FIREWALL_ENABLED = $firewall_enable" >> config.py
+echo "SS_FIREWALL_MODE = '$firewall_mode'" >> config.py
+echo "SS_BAN_PORTS = $ban_ports" >> config.py
+echo "SS_ALLOW_PORTS = $allow_ports" >> config.py
 echo "SS_FIREWALL_TRUSTED = [443]" >> config.py
 echo "SS_FORBIDDEN_IP = []" >> config.py
 echo "LOG_ENABLE = True" >> config.py
@@ -72,7 +72,7 @@ echo "stdout_logfile = /var/log/supervisor/ssserver.log" >> ssserver.conf
 echo "stderr_logfile = /var/log/supervisor/ssserver_err.log" >> ssserver.conf
 
 # Install serverspeeder if necessary
-cd ~
+cd /root
 if [ $is_serverspeeder != 0 ];
 then
 	wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh

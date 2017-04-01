@@ -21,6 +21,4 @@
 -A OUTPUT -p tcp --dport 993 -j DROP
 -A OUTPUT -p tcp --dport 995 -j LOG --log-prefix "IPTABLES TCP-OUT 995:"
 -A OUTPUT -p tcp --dport 995 -j DROP
--A OUTPUT -p tcp --dport 995 -j LOG --log-prefix "IPTABLES TCP-OUT 995:"
--A OUTPUT -p tcp --dport 995 -j DROP
 COMMIT
