@@ -1,15 +1,12 @@
 # Shadowsocks mu auto installer
-## How to use
-First make sure that your server os is Debian.
-Just clone it and
 
-`chmod +x ssmu_install_debian8.sh`
+This script is designed to install shadowsocks manyuser painlessly.
 
-and then edit ssmu.cfg according to your sspanel and server config. Then run
+## Supported OS
 
-`./ssmu_install_debian8.sh`
++ Debian/Ubuntu Linux
 
-You may need some interact while installation.
+## Supported server
 
-## Note
-### If you choose to overwrite iptables config in the config file, your iptables config WILL BE OVERWRITTEN!!!
++ [shadowsocks-go:orvice](https://github.com/orvice/shadowsocks-go)
++ [shadowsocks-py-mu:fsgmhoward](https://github.com/fsgmhoward/shadowsocks-py-mu)
