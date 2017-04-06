@@ -7,7 +7,8 @@
 # Update system and get some packages
 apt-get update
 apt-get upgrade -y
-apt-get install make gcc g++ rsyslog supervisor redis-server git curl -y
+apt-get install make gcc g++ rsyslog supervisor redis-server git curl m2crypto -y
+source ../patch/libsodium.sh
 
 # Source config file and copy iptables config file
 source ./ssmu.cfg
