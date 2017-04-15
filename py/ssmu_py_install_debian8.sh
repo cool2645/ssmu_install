@@ -17,7 +17,7 @@ then
 	cp iptables.banmailports.rules /etc/iptables.banmailports.rules
 fi
 
-# Install pip and ss py mu
+# Install and ss py mu
 cd /root
 git clone https://github.com/fsgmhoward/shadowsocks-py-mu.git
 

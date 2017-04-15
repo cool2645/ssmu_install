@@ -4,11 +4,10 @@ This script is applicable to [shadowsocks-go:orvice](https://github.com/orvice/s
 
 ## How to use
 First make sure that your server os is Debian.
-Just clone it and
 
-`chmod +x ssmu_install_debian8.sh`
+Just clone it and edit ssmu.cfg according to your sspanel and server config.
 
-and then edit ssmu.cfg according to your sspanel and server config. Then run
+Then run
 
 `./ssmu_install_debian8.sh`
 
