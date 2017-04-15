@@ -109,6 +109,8 @@ then
 fi
 
 # Reload supervisor
+systemctl enable supervisor
+systemctl restart supervisor
 supervisorctl reload
 
 echo "ssr mu install complete QwQ"
