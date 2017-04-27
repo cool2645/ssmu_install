@@ -5,6 +5,7 @@ This script is designed to install shadowsocks(R) manyuser painlessly.
 ## Supported OS
 
 + Debian/Ubuntu Linux
++ Arch Linux
 
 ## Supported server
 
